@@ -7,7 +7,7 @@ import axios from 'axios';
 export default function Dashboard() {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const [hasAssessment, setHasAssessment] = useState(!!localStorage.getItem('assessment_result'));
+  const hasAssessment = !!localStorage.getItem('assessment_result');
   const [hasRoadmap, setHasRoadmap] = useState(false);
   const [greeting, setGreeting] = useState('');
   const [profile, setProfile] = useState({});

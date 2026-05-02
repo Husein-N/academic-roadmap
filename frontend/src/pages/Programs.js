@@ -2,7 +2,7 @@ import API_URL from '../config';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const DIFFICULTY_LABELS = ['', 'Very Easy', 'Easy', 'Moderate', 'Hard', 'Very Hard'];
+const DIFFICULTY_LABELS = ['', 'Very Easy', 'Easy', 'Moderate', 'Hard', 'Very Hard']; // eslint-disable-line
 const DIFFICULTY_COLORS = ['', '#10B981', '#3B82F6', '#F59E0B', '#EF4444', '#7C3AED'];
 
 export default function Programs() {
