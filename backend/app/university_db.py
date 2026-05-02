@@ -1,7 +1,10 @@
 import sqlite3
 import os
 
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "university.db")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, "university.db")
+print(f"Looking for university.db at: {DB_PATH}")
+print(f"File exists: {os.path.exists(DB_PATH)}")
 
 def get_connection():
     conn = sqlite3.connect(DB_PATH)
